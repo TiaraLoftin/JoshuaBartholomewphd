@@ -1,0 +1,229 @@
+<html>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.ml10 {
+  position: relative;
+  font-weight: 900;
+  font-size: 4em;
+}
+.ml10 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+.ml10 .letter {
+  display: inline-block;
+  line-height: 1em;
+  transform-origin: 0 0;
+}
+ul#menu li {
+  display:inline;
+}
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.title {
+  color: grey;
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #482C14;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.active {
+color: #482C14;
+text-decoration: underline;
+}
+.button:hover {
+  background-color: #805C3C;
+}
+.container-fluid {
+    padding: 60px 50px;
+  }
+  /* Style the tab */
+.tab {
+  overflow: hidden;
+}
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #faf2eb;
+}
+/* Create an active/current tablink class */
+.tab button.active {
+  color: #482C14;
+}
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+font-family:'Times New Roman';
+}
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  color: #482C14;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button" style="width:30%;"><img src="JBlogo.png" style="height:8%;width:8%;font-family:'Times New Roman';"> Joshua S. Bartholomew</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="about.html" class="w3-bar-item w3-button" style="font-family:'Times New Roman';">About</a>
+      <a href="research.html" class="w3-bar-item w3-button active" style="font-family:'Times New Roman';">Research</a>
+      <div class="dropdown">
+          <button class="dropbtn">Economic Development & Community Center <i class="fa fa-caret-down"></i>
+         </button>
+         <div class="dropdown-content">
+      <a href="cv.html" class="w3-bar-item w3-button" style="font-family:'Times New Roman';">Curriculum Vitae</a>
+      <a href="consulting.html" class="w3-bar-item w3-button" style="font-family:'Times New Roman';">Consulting</a>
+      <a href="publishing.html" class="w3-bar-item w3-button" style="font-family:'Times New Roman';">Public Scholarship & Media</a>
+</div>
+</div>
+<a href="contact.html" class="w3-bar-item w3-button" style="font-family:'Times New Roman';">Contact</a>
+  </div>
+  </div>
+</div>
+<div style="height: 30%; width: 100%;background-color:#faf2eb;">
+  <center>
+    <br>
+<img src="jblogo2.png" style="height:100%; width:50%;padding-top:50px;">
+</div>
+<div>
+  <center>
+    <img src="unnamed (1)2.jpeg" style="height:50%;">
+  <h1 style="font-family: Apple Chancery">Research</h1>
+  <br>
+  <div class="tab">
+  <button class="tablinks" onclick="openResearch(event, 'Research1')">Economic Race and Racial Equality</button>
+  <button class="tablinks" onclick="openResearch(event, 'Research2')">Acknowledge Race Without Reinforcing Racism</button>
+  <button class="tablinks" onclick="openResearch(event, 'Rsearch3')">Reimagine Youth and Youth Adult Ministries</button>
+</div>
+<div id="Research1" class="tabcontent">
+  <br>
+  <br>
+  <h3 style="color:#482C14;"><u>What is the relationship between economic justice and racial equality?</u></h3>
+  <br>
+  <br>
+  <p style="text-align:left; width:50%;">Dr. Bartholomew’s primary research deals with the relationship between economic justice and racial equality. To this end, his dissertation, Economic Liberation from the Margins: The Power of Racial Politics in Social Change, was the first, original attempt to write a critical constructive relationship between Black Theology/Womanism and The Black Panther Party’s economic philosophies. By prioritizing Womanist methodologies, Dr. Bartholomew’s critiques capitalism and Eurocentric paradigms of economic justice and its relationship to the margins. There has been an absence of such a critical intellectual project. Dr. Bartholomew’s critical dialogue between Black and Womanist ethicists and economic social theorists offers a basis for moving Christian ethicists away from Eurocentric models of economic justice that eschew experiences from the margins of the colonial world. To date, there has been no such attempt in relation to Black Liberation Theology.</p>
+  <br>
+  <br>
+</div>
+<div id="Research2" class="tabcontent">
+  <br>
+  <br>
+  <h3 style="color:#482C14;">How do we acknowledge race without reinforcing racism?</h3>
+  <br>
+  <br>
+  <p style="text-align:left; width:50%;">Dr. Bartholomew has extensive experience of successfully developing empirical skills for social science research even in other areas and academic fields relevant to theological education. Dr. Bartholomew’s research as a Postdoctoral Fellow at the Harvard T.H. Chan School of Public Health evaluated programs aimed at preventing violent extremism. Given that racism and violence are not only issues of (social) ethics but also of public health, Dr. Bartholomew specifically contributed to his research team qualitative data to provide the first systematic study of white supremacist ideological narratives with the purpose of analyzing people’s ability to discredit extremist propaganda.</p>
+  <br>
+  <br>
+</div>
+<div id="Rsearch3" class="tabcontent">
+  <br>
+  <br>
+  <h3 style="color:#482C14;">How can we reimagine youth and young adult ministries?</h3>
+<br>
+<br>
+  <p style="text-align:left; width:50%;">As research coordinator and representative on the Equip Project, the Lilly Grant received by Gordon-Conwell (GCTS) under the leadership of Dr. Emmett Price and his team through the Institute for the Study of the Black Christian Experience (ISBCE), Dr. Bartholomew is aware of the changing concerns and priorities of young people in ministry. Dr. Bartholomew is committed to growing and adapting the church to meet emerging needs. Together with projects like #EQUIP, Dr. Bartholomew’s research provides access to spiritual and educational services to adolescents and young adults, fully integrating the cultural competence of innovative ministerial leadership.</p>
+  <br>
+  <br>
+</div>
+</center>
+</div>
+<footer class="w3-center w3-padding-16" style="background-color:#482C14; color:#faf2eb;">
+  <p><i class="fa fa-copyright" style="color:#faf2eb;"></i>2022-2023 Joshua S. Bartholomew, Ph.D. | All Rights Reserved</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script>
+function openResearch(evt, researchName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(researchName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+</html>
